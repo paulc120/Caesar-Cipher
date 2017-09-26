@@ -17,20 +17,29 @@ public class Cipher {
 		
 		Scanner scan = new Scanner(System.in); 
 		
-		System.out.println("Please enter five numbers between 0 and 19: ");
+		System.out.println("Please enter five numbers between 0 and 19. ");
 		
 		int numberOne, numberTwo, numberThree, numberFour, numberFive;
 	 	
 		// get five digits
+		System.out.print("\nFirst number: ");
 		numberOne = scan.nextInt();
+		
+		System.out.print("Second number: ");
 		numberTwo = scan.nextInt();
+		
+		System.out.print("Third number: ");
 		numberThree = scan.nextInt();
+		
+		System.out.print("Fourth number: ");
 		numberFour = scan.nextInt();
+		
+		System.out.print("Fifth number: ");
 		numberFive = scan.nextInt(); 
 		
 		
 		// get sum of five numbers
-		System.out.println("\nYour sum is " + (numberOne + numberTwo + 
+		System.out.println("\nYour sum is: " + (numberOne + numberTwo + 
 						numberThree + numberFour + numberFive) + ".");
 		 
 		// store sum of five numbers in variable
@@ -43,7 +52,7 @@ public class Cipher {
 		tensPlace = total % 10; 
 		
 		// get key
-		System.out.println("\nEnter a number between 0 to 9 for encoding: ");
+		System.out.print("\nEnter a number between 0 to 9 for encoding: ");
 		
 		// store key to a variable
 		int key; 
